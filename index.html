@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>OpinionCash - Members - Paid to Signup</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Design">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Manik MT">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+    <!--  <link rel="apple-touch-icon" sizes="180x180" href="img/fav_icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/fav_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav_icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/fav_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav_icon.png"> -->
+    <!-- Font awsome style -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="https://opinioncash.io/templates/52/style.css">
+    <title>Website title</title>
+    <script type="text/javascript" src="https://opinioncash.io//javascript/javascript.js?u=14"
+        id="javascriptScript"></script>
+    <style>
+         .outer-menu ul li a:hover span {
+            transform: rotate(-90deg);
+            display: block;
+        }
+        .outer-menu ul ul li a span:hover  {
+            transform: rotate(-90deg);
+            display: block;
+        }
+        .outer-menu ul li a span {
+            transition:  0.4s;
+        }
+       .outer-menu ul li a:hover {
+            background-color: black;
+        }
+        .outer-menu ul {
+            width: 220px;
+            line-height: 35px;
+            min-height: 35px;
+        }
+        .outer-menu ul .inner-menu li:hover{
+            transition: 0.3s ease;
+            border-left: 3px solid white;
+        }
+        .inner-menu {
+            display: none;
+            z-index: 1;
+            width: 180px;
+        }
+
+        .inner-menu li a {
+            display: block;
+            border-bottom: 1px solid white;
+            text-align: center;
+        }
+        ul li:hover .inner-menu {
+            display: block;
+        }
+
+        i {
+            font-size: 14px;
+        }
+        .arrow-end {
+            float: right;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="">
+        <header class="">
+            <!-- container start -->
+            <div class="container">
+                <!-- nav start -->
+                <nav class="navbar navbar-expand-md p-0">
+                    <a class="navbar-brand" href="https://opinioncash.io">
+                        <img src="images/logo.png" logo class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" id="navbar_toggler" onclick="openNav()">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link log" href="/members/signupPTS.php"><i class="fa fa-user"></i>
+                                    Surveys</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/members/logout.php?k=50967aba76e600c9fbdb62d9c06fe6f7"><i
+                                        class="fa fa-user-plus"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- nav end -->
+                <div class="mySidenav_body">
+
+                    <div id="mySidenav" class="sidenav text-center">
+                        <div class="myhide" onclick="closeNav()"></div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                        <div class="sidenav_inner">
+                            <a href="/members/login.php"><i class="fas fa-user"></i> Login</a>
+                            <a href="/members/register.php"> <img src="/icon_1.png" alt="img" class="img-fluid"> Sign
+                                Up</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- container end -->
+        </header>
+    </div>
+    <!-- header end -->
+    <div class="container p-0">
+        <div class="row">
+            <div class="navigatin-menu col-lg-2 outer-menu p-0">
+                <ul class="bg-success w-111">
+                    <li class="border-1 border-bottom  ">
+                        <a href="https://opinioncash.io/members/index.php" class="text-white d-block p-1 pl-3 pr-3 "><i
+                                class="fa fa-user mr-2 icons"></i>Members Home  </a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/editAccount.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Edit Account</a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/balance.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>
+                            Account Balance
+                        </a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/upgrade.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Upgrade</a></li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/downline.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Your Referrals
+                            <span class="fas fa-angle-right ml-2 arrow-end"> </span></a>
+                        <ul class="inner-menu  rounded bg-success">
+                            <li><a href="" class="d-block p-2  text-white">Home</a></li>
+                            <li><a href="" class="d-block p-2  text-white">About</a></li>
+                            <li><a href="" class="d-block p-2  text-white border-0">Contact</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/refer.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Refer a Member</a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/advertise.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Advertising <span
+                                class="fas fa-angle-right ml-2 arrow-end"> </span></a>
+                        <ul class="inner-menu  rounded bg-success">
+                            <li><a href="" class="d-block p-2  text-white">Home</a></li>
+                            <li><a href="" class="d-block p-2  text-white">About</a></li>
+                            <li><a href="" class="d-block p-2  text-white boder-0">Contact</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/stats.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>
+                            Advertising Stats</a></li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/signupPTS.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Offers </a></li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/clickPTC.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Paid to Click</a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/members/ticket.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Trouble Ticket</a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/inbox/index.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Inbox: 0 </a></li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/withdraw.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Withdraw Cash </a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/points/index.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Withdraw Points
+                        </a></li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/points/converter.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Convert Points </a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href=" https://opinioncash.io/members/pts/jackpot/index.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Jackpot </a></li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/contests/pts.php "
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i> Offer Contest </a>
+                    </li>
+                    <li class="border-1 border-bottom "><a href="https://opinioncash.io/contests/ref.php"
+                            class="text-white d-block p-1 pl-3 pr-3"><i class="fa fa-user mr-2"></i>Referral Contest</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-container col-lg-9">
+
+                <table cellpadding="0" cellspacing="0" style="border:0px;width:100%">
+                    <tr>
+                        <td>
+                            <b>Main</b>
+                        </td>
+                        <td align="right">
+                            <select name="jump"
+                                onChange="if(this.value) location.href='https://opinioncash.io/members/pts/requests.php?folder='+this.value;">
+                                <option value="">Browse Folders</option>
+                                <option value="2">Completed [0]</option>
+                                <option value="3">Denied [0]</option>
+                                <option value="1">Pending [0]</option>
+                                <option value="6">Reported [0]</option>
+                                <option value="5">Under Review [0]</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+
+
+
+                <form method="get" action="signupPTS.php" style="margin:0px">
+                    <table cellpadding="4" cellspacing="0" style="width:100%" class="table">
+                        <tr>
+                            <th>Search for Offers</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="q" maxlength="255" style="width:200px" value="" />
+                                <input type="submit" value="Search" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <br />
+                <table cellspacing="0" cellpadding="0" style="width:100%;border:0px">
+                    <tr>
+                        <td><b>Displaying page 1 of 1.</b></td>
+                        <td align="right">
+                            <select onChange="if(this.value) location.href='signupPTS.php?cid=0&sort1='+this.value;">
+                                <option value="">Sort By</option>
+                                <optgroup label="&uarr; Ascending">
+                                    <option value="Cash">Cash</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Crediting Time">Crediting Time</option>
+                                    <option value="Date Added">Date Added</option>
+                                    <option value="ID">ID</option>
+                                    <option value="Last Credited">Last Credited</option>
+                                    <option value="Name">Name</option>
+                                    <option value="Offer Rating">Offer Rating</option>
+                                    <option value="Points">Points</option>
+                                </optgroup>
+                                <optgroup label="&darr; Descending">
+                                    <option value="Cash,high">Cash</option>
+                                    <option value="Completed,high">Completed</option>
+                                    <option value="Crediting Time,high">Crediting Time</option>
+                                    <option value="Date Added,high">Date Added</option>
+                                    <option value="ID,high">ID</option>
+                                    <option value="Last Credited,high">Last Credited</option>
+                                    <option value="Name,high">Name</option>
+                                    <option value="Offer Rating,high">Offer Rating</option>
+                                    <option value="Points,high">Points</option>
+                                </optgroup>
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+                <br style="line-height:4px">
+
+                <form method="POST" action="signupPTS.php?signup&ptsID=15&cid=0&page2=1&return=%26cid%3D0%26page2%3D1"
+                    style="margin:0px">
+                    <table cellpadding="4" cellspacing="0" style="width:100%" class="table">
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><a href="https://opinioncash.io/members/pts/click.php?ptsID=15" target="_blank"
+                                            onclick="_ptsClick15=true"><img
+                                                src="https://revenuehut.com/images/advcrea/125x125_10514.jpg"
+                                                style="border:0px"></a></div>
+                                    <div><a href="https://opinioncash.io/members/pts/click.php?ptsID=15" target="_blank"
+                                            onclick="_ptsClick15=true"><b>Paid Surveys Online</b></a></div>
+                                    <div>Paid Surveys Online</div>
+                                </div>
+                                <br />
+                                <table style="width:100%;border:0px" cellpadding="4" cellspacing="0" class="none">
+                                    <tr>
+                                        <td style="width:25%;" align="right">
+                                            <b>Amount</b>
+                                        </td>
+                                        <td style="width:75%">
+                                            0.01 points
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Submit">
+                                            <input type="button" value="Report"
+                                                onClick="if(confirm('Are you sure this offer is not working correctly and you wish to report it?')){openWindow('https://opinioncash.io/members/pts/report.php?id=15',300,300);}else{return false;}" />
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <br style="line-height:4px">
+                <form method="POST" action="signupPTS.php?signup&ptsID=14&cid=0&page2=1&return=%26cid%3D0%26page2%3D1"
+                    style="margin:0px">
+                    <table cellpadding="4" cellspacing="0" style="width:100%" class="table">
+                        <tr>
+                            <td>
+                                <div>
+
+
+
+                                    <div><a href="https://opinioncash.io/members/pts/click.php?ptsID=14" target="_blank"
+                                            onclick="_ptsClick14=true"><img
+                                                src="https://revenuehut.com/images/advcrea/125x125_10514.jpg"
+                                                style="border:0px"></a></div>
+                                    <div><a href="https://opinioncash.io/members/pts/click.php?ptsID=14" target="_blank"
+                                            onclick="_ptsClick14=true"><b>Paid Surveys Online</b></a></div>
+
+
+
+                                    <div>Paid Surveys Online</div>
+
+
+                                </div>
+                                <br />
+                                <table style="width:100%;border:0px" cellpadding="4" cellspacing="0" class="none">
+
+
+
+
+
+
+                                    <tr>
+                                        <td style="width:25%;" align="right">
+                                            <b>Amount</b>
+                                        </td>
+                                        <td style="width:75%">
+                                            0.01 points
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Submit">
+                                            <input type="button" value="Report"
+                                                onClick="if(confirm('Are you sure this offer is not working correctly and you wish to report it?')){openWindow('https://opinioncash.io/members/pts/report.php?id=14',300,300);}else{return false;}" />
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <br style="line-height:4px">
+                <table cellspacing="0" cellpadding="0" style="width:100%;border:0px">
+                    <tr>
+                        <td><b>Displaying page 1 of 1.</b></td>
+                        <td align="right">
+                            <select onChange="if(this.value) location.href='signupPTS.php?cid=0&sort1='+this.value;">
+                                <option value="">Sort By</option>
+                                <optgroup label="&uarr; Ascending">
+                                    <option value="Cash">Cash</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Crediting Time">Crediting Time</option>
+                                    <option value="Date Added">Date Added</option>
+                                    <option value="ID">ID</option>
+                                    <option value="Last Credited">Last Credited</option>
+                                    <option value="Name">Name</option>
+                                    <option value="Offer Rating">Offer Rating</option>
+                                    <option value="Points">Points</option>
+                                </optgroup>
+                                <optgroup label="&darr; Descending">
+                                    <option value="Cash,high">Cash</option>
+                                    <option value="Completed,high">Completed</option>
+                                    <option value="Crediting Time,high">Crediting Time</option>
+                                    <option value="Date Added,high">Date Added</option>
+                                    <option value="ID,high">ID</option>
+                                    <option value="Last Credited,high">Last Credited</option>
+                                    <option value="Name,high">Name</option>
+                                    <option value="Offer Rating,high">Offer Rating</option>
+                                    <option value="Points,high">Points</option>
+                                </optgroup>
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="container">
+            <p class="m-0">Copyright &copy; <span id="date_years"></span> Opinioncash. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").classList.add("wd-55");
+            document.getElementById("mySidenav").classList.remove("wd-0");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").classList.add("wd-0");
+            document.getElementById("mySidenav").classList.remove("wd-55");
+
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#navbar_toggler").click(function () {
+                $(".myhide").addClass("myhide_add");
+            });
+            $(".myhide").click(function () {
+                $(".myhide").removeClass("myhide_add");
+            });
+            $(".closebtn").click(function () {
+                $(".myhide").removeClass("myhide_add");
+            });
+        });
+    </script>
+    </script>
+    <script>
+        var d = new Date();
+        document.getElementById("date_years").innerHTML = d.getFullYear();
+    </script>
+
+</body>
+
+</html>
